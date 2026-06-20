@@ -1,7 +1,3 @@
-// ============================
-// MOBILE MENU TOGGLE
-// ============================
-
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -10,11 +6,6 @@ menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 
 });
-
-// ============================
-// MOBILE MENU STYLE
-// ============================
-
 const mobileMenuStyle = document.createElement("style");
 
 mobileMenuStyle.innerHTML = `
@@ -47,11 +38,6 @@ box-shadow:0 15px 35px rgba(0,0,0,.25);
 `;
 
 document.head.appendChild(mobileMenuStyle);
-
-// ============================
-// NAVBAR SCROLL EFFECT
-// ============================
-
 window.addEventListener("scroll", () => {
 
     const navbar = document.querySelector(".navbar");
@@ -77,11 +63,6 @@ window.addEventListener("scroll", () => {
     }
 
 });
-
-// ============================
-// SMOOTH SCROLL
-// ============================
-
 document.querySelectorAll('a[href^="#"]').forEach(link => {
 
     link.addEventListener("click", function(e){
@@ -104,11 +85,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
 
 });
-
-// ============================
-// HERO FADE ANIMATION
-// ============================
-
 window.addEventListener("load", () => {
 
     const heroText =
@@ -151,11 +127,6 @@ window.addEventListener("load", () => {
     },600);
 
 });
-
-// ============================
-// SCROLL REVEAL ANIMATION
-// ============================
-
 const revealElements = document.querySelectorAll(
 
 ".why-card, .menu-card, .review-card, .about-image, .about-text, .contact-form, .contact-info"
@@ -205,11 +176,6 @@ revealOnScroll
 );
 
 revealOnScroll();
-
-// ============================
-// CONTACT FORM
-// ============================
-
 const form =
 document.querySelector("form");
 
@@ -224,11 +190,6 @@ form.addEventListener("submit", (e) => {
     form.reset();
 
 });
-
-// ============================
-// MENU CARD HOVER EFFECT
-// ============================
-
 const cards =
 document.querySelectorAll(".menu-card");
 
@@ -249,11 +210,6 @@ cards.forEach(card => {
     });
 
 });
-
-// ============================
-// FOOTER YEAR
-// ============================
-
 const footer =
 document.querySelector("footer p");
 
